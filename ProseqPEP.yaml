@@ -1,0 +1,37 @@
+description: A PEP for nascent RNA samples for the PEPPRO pipeline.
+properties:
+  samples:
+    type: array
+    items:
+      type: object
+      properties:
+        sample_name: 
+          type: string
+          description: "Name of the sample, which is the name of the output BED file"
+        organism: 
+          type: string
+          description: "Organism"
+        protocol: 
+          type: string
+          description: "Specifies whether the same is pro-seq or gro-seq"
+          enum: ["PRO", "GRO", "PRO-seq", "GRO-seq"]
+        genome:
+          type: string
+          description: "Refgenie genome registry identifier"
+        read_type:
+          type: boolean
+          description: "whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
+        read1:
+          type: string
+          description: "Fastq file for read 1"
+          enum: ["bigWig", "bigBed", "bed", "wig", "bedGraph"]
+        read2:
+          type: string
+          description: "Fastq file for read 2 (for paired-end experiments)"
+      required:
+        - sample_name
+        - protocol
+        - read1
+        - genome
+required:
+  - samples
