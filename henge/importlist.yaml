@@ -1,0 +1,4 @@
+description: "A priority list of bulker manifests that are imported."
+type: array
+items:
+  type: string
