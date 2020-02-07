@@ -1,0 +1,52 @@
+description: generic PEP schema
+
+properties:
+  config_file:
+    description: "a path to the config file"
+    type: string
+  dcc:
+    description: "divvy.ComputingConfiguration computing configuration object"
+    type: object
+    properties:
+      compute_packages:
+        type: object
+  subprojects:
+    description: "object overwriting original project attributes"
+    type: object
+  name:
+    description: "project name"
+    type: string
+  _samples:
+    type: array
+    items:
+      type: object
+      properties:
+        sample_name: 
+          type: string
+          description: "unique name of the sample"
+        protocol:
+          type: string
+          description: "protocol to match the pipeline"
+      required:
+        - sample_name
+  metadata:
+    type: object
+    properties:
+      sample_table: 
+        description: "a path to the sample annotation sheet with one row per sample"
+        type: string
+      subsample_table: 
+        description: "a path to the sample subannotation sheet"
+        type: string
+      output_dir: 
+        description: "a path to the output directory"
+        type: string
+      pipeline_interfaces:
+        description: "a list of paths to pipeline interfaces"
+        array:
+          items:
+            type: string
+
+required:
+  - _samples
+  - metadata
