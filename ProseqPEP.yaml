@@ -19,12 +19,12 @@ properties:
           type: string
           description: "Refgenie genome registry identifier"
         read_type:
-          type: boolean
+          type: string
           description: "whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
+          enum: ["SINGLE", "PAIRED"]
         read1:
           type: string
           description: "Fastq file for read 1"
-          enum: ["bigWig", "bigBed", "bed", "wig", "bedGraph"]
         read2:
           type: string
           description: "Fastq file for read 2 (for paired-end experiments)"
