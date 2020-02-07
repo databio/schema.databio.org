@@ -1,0 +1,44 @@
+description: databio_genomes PEP schema
+
+properties:
+  samples:
+    type: array
+    items:
+      type: object
+      properties:
+        sample_name: 
+          type: string
+          description: "name of the sample, which is the name of the output BED file"
+        genome:
+          type: string
+          description: "namespace for the assets to be build"
+        asset:
+          type: string
+          description: "name of the asset to be build"
+        tag:
+          type: string
+          description: "tag of the asset to be build"
+        input_id:
+          type: string
+          description: "id of refgenie build function input"
+        input_value:
+          type: string
+          description: "value of refgenie build function input"
+        local_input:
+          type: string
+          description: "absolute path for the input file"
+        input_type:
+          type: string
+          description: "type of the refgenie build function input"
+          pattern: "^assets*|^params*|^files*"
+        protocol:
+          description: "sample protocol that matches the refgnie build pipeline"
+          const: "refgenie"
+      required:
+        - sample_name
+        - asset
+        - genome
+        - local_input
+        - protocol
+required:
+  - samples
