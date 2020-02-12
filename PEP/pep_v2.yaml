@@ -1,0 +1,54 @@
+description: Generic PEP schema
+version: 2
+properties:
+  pep_format_version:
+    description: "Indicator for version of the PEP Schema"
+    type: int
+    minimum: 2
+  sample_table:
+    description: "a path to the sample annotation sheet with one row per sample"
+    type: string
+  subsample_table: 
+    description: "a path to the sample subannotation sheet"
+    type: string
+  sample_modifiers:
+    type: object
+    properties:
+      constants:
+        type: object
+      implied:
+        type: object
+      derived:
+        type: array
+        items:
+          type: string
+      synonyms:
+        type: object
+      derived_sources:
+        type: object
+  subprojects:
+    description: "object overwriting original project attributes"
+    type: object
+  name:
+    description: "project name"
+    type: string
+  _samples:
+    type: array
+    items:
+      type: object
+      properties:
+        sample_name: 
+          type: string
+          description: "unique name of the sample"
+        protocol:
+          type: string
+          description: "protocol to match the pipeline"
+      required:
+        - sample_name
+  required:
+    - pep_config_version
+
+
+required:
+  - _samples
+  - metadata

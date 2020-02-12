@@ -1,0 +1,25 @@
+description: "Schema for List of ASDs"
+type: array
+items: 
+  type: object
+  properties:
+    name:
+      type: string
+    length:
+      type: "integer"
+    topology:
+      type: string
+      enum: ["circular", "linear"]
+      default: "linear"
+    sequence_digest:
+      type: string
+      description: "The sequence digest"
+  required:
+    - length
+    - name
+    - topology
+  recursive:
+    - sequence_digest
+  not:
+    required:
+      - sequence
