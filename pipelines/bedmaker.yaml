@@ -20,8 +20,10 @@ properties:
           description: "organism genome code"
           enum: ["hg18", "hg19", "hg38", "mm9", "mm10"]
         narrowpeak:
-          type: string
-          description: "whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
+          type: integer
+          minimum: 0
+          maximum: 1
+          description: "binary number indicating whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
         format:
           type: string
           description: "file format"

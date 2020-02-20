@@ -16,7 +16,7 @@ properties:
   name:
     description: "project name"
     type: string
-  _samples:
+  samples:
     type: array
     items:
       type: object
@@ -48,5 +48,5 @@ properties:
             type: string
 
 required:
-  - _samples
+  - samples
   - metadata
