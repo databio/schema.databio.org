@@ -14,7 +14,7 @@ properties:
         protocol: 
           type: string
           description: "Specifies whether the same is pro-seq or gro-seq"
-          enum: ["PRO", "GRO", "PRO-seq", "GRO-seq"]
+          enum: ["PRO", "pro", "PRO-SEQ", "PRO-seq", "proseq", "PROSEQ", "GRO", "gro", "groseq", "GROSEQ", "GRO-SEQ", "GRO-seq"]
         genome:
           type: string
           description: "Refgenie genome registry identifier"
