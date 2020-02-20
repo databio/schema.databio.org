@@ -20,7 +20,7 @@ properties:
           description: "Refgenie genome registry identifier"
         read_type:
           type: string
-          description: "whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
+          description: "Is this single or paired-end data?"
           enum: ["SINGLE", "PAIRED"]
         read1:
           type: string
