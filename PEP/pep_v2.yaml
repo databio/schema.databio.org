@@ -5,12 +5,6 @@ properties:
     description: "Indicator for version of the PEP Schema"
     type: integer
     minimum: 2
-  sample_table:
-    description: "a path to the sample annotation sheet with one row per sample"
-    type: string
-  subsample_table: 
-    description: "a path to the sample subannotation sheet"
-    type: string
   sample_modifiers:
     type: object
     properties:
@@ -32,7 +26,7 @@ properties:
   name:
     description: "project name"
     type: string
-  _samples:
+  samples:
     type: array
     items:
       type: object
@@ -40,15 +34,8 @@ properties:
         sample_name: 
           type: string
           description: "unique name of the sample"
-        protocol:
-          type: string
-          description: "protocol to match the pipeline"
       required:
         - sample_name
-  required:
-    - config_version
-
-
 required:
-  - _samples
-  - metadata
+  - samples
+  - config_version
