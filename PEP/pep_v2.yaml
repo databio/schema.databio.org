@@ -46,7 +46,7 @@ properties:
       required:
         - sample_name
   required:
-    - pep_config_version
+    - config_version
 
 
 required:
