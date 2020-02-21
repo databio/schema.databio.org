@@ -3,7 +3,7 @@ version: 2
 properties:
   config_version:
     description: "Indicator for version of the PEP Schema"
-    type: int
+    type: integer
     minimum: 2
   sample_table:
     description: "a path to the sample annotation sheet with one row per sample"
