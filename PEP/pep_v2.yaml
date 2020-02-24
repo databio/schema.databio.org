@@ -3,7 +3,7 @@ version: 2
 properties:
   config_version:
     description: "Indicator for version of the PEP Schema"
-    type: integer
+    type: number
     minimum: 2
   sample_modifiers:
     type: object
@@ -21,10 +21,16 @@ properties:
       derived_sources:
         type: object
   subprojects:
-    description: "object overwriting original project attributes"
+    description: "Object overwriting original project attributes"
     type: object
+  sample_table:
+    type: string
+    description: "Path to the sample annotation sheet with one row per sample"
+  subsample_table:
+    type: string
+    description: "Path to the subsample annotation sheet with one row per subsample and sample_name attribute matching one of the samples"
   name:
-    description: "project name"
+    description: "Project name"
     type: string
   samples:
     type: array
@@ -33,7 +39,7 @@ properties:
       properties:
         sample_name: 
           type: string
-          description: "unique name of the sample"
+          description: "Unique name of the sample"
       required:
         - sample_name
 required:
