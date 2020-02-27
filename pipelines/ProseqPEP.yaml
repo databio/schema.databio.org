@@ -1,4 +1,5 @@
 description: A PEP for nascent RNA samples for the PEPPRO pipeline.
+imports: http://schema.databio.org/PEP/pep_v2.yaml
 properties:
   samples:
     type: array
@@ -28,6 +29,9 @@ properties:
         read2:
           type: string
           description: "Fastq file for read 2 (for paired-end experiments)"
+        umi_len:
+          type: integer
+          description: "Length of the Unique Molecular Identifier, if any"
       required:
         - sample_name
         - protocol
