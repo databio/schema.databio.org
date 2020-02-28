@@ -32,6 +32,8 @@ properties:
     imports:
       description: "List of external PEP project config files to import"
       type: array
+    required:
+    - pep_version
   samples:
     type: array
     items:
@@ -43,6 +45,5 @@ properties:
       required:
         - sample_name
 required:
+  - config
   - samples
-  - pep_version
-  
