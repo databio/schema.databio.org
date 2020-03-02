@@ -24,11 +24,19 @@ properties:
           description: "Is this single or paired-end data?"
           enum: ["SINGLE", "PAIRED"]
         read1:
-          type: string
-          description: "Fastq file for read 1"
+          anyOf:
+            - type: string
+              description: "Fastq file for read 1"
+            - type: array
+              items:
+                type: string
         read2:
-          type: string
-          description: "Fastq file for read 2 (for paired-end experiments)"
+          anyOf:
+            - type: string
+              description: "Fastq file for read 2 (for paired-end experiments)"
+            - type: array
+              items:
+                type: string
         umi_len:
           type: integer
           description: "Length of the Unique Molecular Identifier, if any"
