@@ -1,37 +1,51 @@
-description: Generic PEP schema
+description: "Schema for a minimal PEP"
 version: "2.0.0"
 properties:
   config:
     pep_version:
-      description: "Indicator for version of the PEP Schema"
+      description: "Version of the PEP Schema this PEP follows"
       type: string
     sample_table:
       type: string
-      description: "Path to the sample annotation sheet with one row per sample"
+      description: "Path to the sample annotation table with one row per sample"
     subsample_table:
       type: string
-      description: "Path to the subsample annotation sheet with one row per subsample and sample_name attribute matching one of the samples"
+      description: "Path to the subsample annotation table with one row per subsample and sample_name attribute matching an entry in the sample table"
     sample_modifiers:
       type: object
       properties:
-        constants:
+        append:
           type: object
-        implied:
+        duplicate:
           type: object
-        derived:
+        imply:
           type: array
           items:
-            type: string
-        synonyms:
+            type: object
+            properties:
+              if:
+                type: object
+              then:
+                type: object
+        derive:
           type: object
-        derived_sources:
-          type: object
+          properties
+            attributes:
+              type: array
+              items:
+                type: string
+            sources:
+              type: object
     amendments:
       description: "Object overwriting original project attributes"
       type: object
     imports:
       description: "List of external PEP project config files to import"
       type: array
+      items:
+        type: string
+    required:
+      - pep_version
   samples:
     type: array
     items:
@@ -44,5 +58,3 @@ properties:
         - sample_name
 required:
   - samples
-  - pep_version
-  
