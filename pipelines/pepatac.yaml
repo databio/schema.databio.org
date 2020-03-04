@@ -1,4 +1,4 @@
-description: A PEP for nascent RNA samples for the PEPPRO pipeline.
+description: A PEP for ATAC-seq samples for the PEPATAC pipeline.
 imports: http://schema.databio.org/pep/2.0.0.yaml
 properties:
   samples:
@@ -14,8 +14,8 @@ properties:
           description: "Organism"
         protocol: 
           type: string
-          description: "Specifies whether the sample is pro-seq or gro-seq"
-          enum: ["PRO", "pro", "PRO-SEQ", "PRO-seq", "proseq", "PROSEQ", "GRO", "gro", "groseq", "GROSEQ", "GRO-SEQ", "GRO-seq"]
+          description: "Must be an ATAC-seq or DNAse-seq sample"
+          enum: ["ATAC", "ATAC-SEQ", "ATAC-seq", "DNase", "DNase-seq"]
         genome:
           type: string
           description: "Refgenie genome registry identifier"
@@ -37,9 +37,6 @@ properties:
             - type: array
               items:
                 type: string
-        umi_len:
-          type: integer
-          description: "Length of the Unique Molecular Identifier, if any"
       required:
         - sample_name
         - protocol
