@@ -37,6 +37,11 @@ properties:
             - type: array
               items:
                 type: string
+      required_input_attrs:
+        - read1
+      input_attrs:
+        - read1
+        - read2
       required:
         - sample_name
         - protocol
