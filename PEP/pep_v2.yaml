@@ -14,17 +14,26 @@ properties:
     sample_modifiers:
       type: object
       properties:
-        constants:
+        append:
           type: object
-        implied:
-          type: object
-        derived:
+        imply:
+          type: array
+          items:
+            type: object
+        derive:
+          anyOf:
+            type: object
+            properties:
+              anyOf:
+                - type: object
+                - type: array
+                  items:
+                    type: string
+        remove:
           type: array
           items:
             type: string
-        synonyms:
-          type: object
-        derived_sources:
+        duplicate:
           type: object
     amendments:
       description: "Object overwriting original project attributes"
