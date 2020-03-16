@@ -20,6 +20,11 @@ properties:
           type: array
           items:
             type: object
+            properties:
+              if:
+                type: object
+              then:
+                type: object
         derive:
             type: object
             properties:
