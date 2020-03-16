@@ -1,7 +1,7 @@
 description: Generic PEP schema
 version: "2.0.0"
 properties:
-  config:
+  _config:
     pep_version:
       description: "Indicator for version of the PEP Schema"
       type: string
@@ -21,10 +21,9 @@ properties:
           items:
             type: object
         derive:
-          anyOf:
             type: object
             properties:
-              anyOf:
+              allOf:
                 - type: object
                 - type: array
                   items:
@@ -54,5 +53,5 @@ properties:
       required:
         - sample_name
 required:
-  - config
+  - _config
   - samples
