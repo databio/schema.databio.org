@@ -9,11 +9,8 @@ properties:
   project_pipeline: 
     $ref: "#/definitions/pipeline"
 anyOf:
-  - required:
-    - sample_pipeline
-  - required:
-    - project_pipeline
-
+  - required: [sample_pipeline, pipeline_name]
+  - required: [project_pipeline, pipeline_name]
 definitions:
   pipeline:
     required:
