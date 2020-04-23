@@ -53,7 +53,8 @@ properties:
       properties:
         sample_name: 
           type: string
-          description: "Unique name of the sample"
+          pattern: "^\\S*$"
+          description: "Unique name of the sample with no whitespace"
       required:
         - sample_name
 required:
