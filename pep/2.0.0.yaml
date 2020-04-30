@@ -1,6 +1,10 @@
 description: "Schema for a minimal PEP"
 version: "2.0.0"
 properties:
+  name: 
+    type: string
+    pattern: "^\\S*$"
+    description: "Project name with no whitespace"
   config:
     pep_version:
       description: "Version of the PEP Schema this PEP follows"
