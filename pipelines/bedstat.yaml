@@ -34,6 +34,8 @@ properties:
         treatment:
           type: string
           description: "freeform description of the sample treatment"
+      required_input_attrs:
+        - bedfile
       required:
         - output_file_path
         - genome
