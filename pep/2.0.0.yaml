@@ -40,14 +40,17 @@ properties:
                 type: string
             sources:
               type: object
-    amendments:
-      description: "Object overwriting original project attributes"
+    project_modifiers:
       type: object
-    imports:
-      description: "List of external PEP project config files to import"
-      type: array
-      items:
-        type: string
+      properties:
+        amend:
+          description: "Object overwriting original project attributes"
+          type: object
+        import:
+          description: "List of external PEP project config files to import"
+          type: array
+          items:
+            type: string
     required:
       - pep_version
   samples:
