@@ -33,7 +33,7 @@ properties:
         treatment:
           type: string
           description: "freeform description of the sample treatment"
-      required_input_attrs:
+      required_inputs_attr:
         - output_file_path
       required:
         - output_file_path
