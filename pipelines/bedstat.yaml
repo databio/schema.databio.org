@@ -1,4 +1,6 @@
 description: bedstat PEP schema
+imports: 
+  - http://schema.databio.org/pep/2.0.0.yaml
 
 properties:
   samples:
@@ -6,9 +8,6 @@ properties:
     items:
       type: object
       properties:
-        sample_name: 
-          type: string
-          description: "ID of the sample, which should follow a systematic format (e.g AML*, EWS*)"
         output_file_path: 
           type: string
           description: "absolute path to the output BED files (.bed or .bed.gz)"
@@ -34,9 +33,10 @@ properties:
         treatment:
           type: string
           description: "freeform description of the sample treatment"
+      required_files:
+        - output_file_path
       required:
         - output_file_path
         - genome
-        - sample_name
 required:
   - samples

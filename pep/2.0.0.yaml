@@ -1,6 +1,10 @@
 description: "Schema for a minimal PEP"
 version: "2.0.0"
 properties:
+  name: 
+    type: string
+    pattern: "^\\S*$"
+    description: "Project name with no whitespace"
   config:
     pep_version:
       description: "Version of the PEP Schema this PEP follows"
@@ -36,14 +40,17 @@ properties:
                 type: string
             sources:
               type: object
-    amendments:
-      description: "Object overwriting original project attributes"
+    project_modifiers:
       type: object
-    imports:
-      description: "List of external PEP project config files to import"
-      type: array
-      items:
-        type: string
+      properties:
+        amend:
+          description: "Object overwriting original project attributes"
+          type: object
+        import:
+          description: "List of external PEP project config files to import"
+          type: array
+          items:
+            type: string
     required:
       - pep_version
   samples:
@@ -53,7 +60,8 @@ properties:
       properties:
         sample_name: 
           type: string
-          description: "Unique name of the sample"
+          pattern: "^\\S*$"
+          description: "Unique name of the sample with no whitespace"
       required:
         - sample_name
 required:

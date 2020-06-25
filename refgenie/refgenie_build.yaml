@@ -18,45 +18,20 @@ properties:
         tag:
           type: string
           description: "tag of the asset to be build"
-        input_id:
-          anyOf:
-            - type: string
-              description: "id of refgenie build function input"
-            - type: array
-              description: "id of refgenie build function input"
-              items:
-                type: string
         input_value:
-          anyOf:
-            - type: string
-              description: "value of refgenie build function input"
-            - type: array
-              description: "value of refgenie build function input"
-              items:
-                type: string
+          type: string
+          description: "value of refgenie build function input"
         local_input:
           type: string
           description: "absolute path for the input file"
         input_type:
-          anyOf:
-            - type: string
-              pattern: "^assets*|^params*|^files*"
-              description: "type of the refgenie build function input"
-            - type: array
-              description: "value of refgenie build function input"
-              items:
-                type: string
-                pattern: "^assets*|^params*|^files*"
-        protocol:
-          description: "sample protocol that matches the refgnie build pipeline"
-          const: "refgenie"
-      files:
-        - local_input
+          type: string
+          pattern: "^assets*|^params*|^files*"
+          description: "type of the refgenie build function input"
       required:
         - sample_name
         - asset
         - genome
         - local_input
-        - protocol
 required:
   - samples
