@@ -50,6 +50,8 @@ properties:
         protocol:
           description: "sample protocol that matches the refgnie build pipeline"
           const: "refgenie"
+      files:
+        - local_input
       required:
         - sample_name
         - asset
