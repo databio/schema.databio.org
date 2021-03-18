@@ -12,9 +12,12 @@ properties:
         input_file_path: 
           type: string
           description: "absolute path the file to convert"
-        output_file_path: 
+        output_bed_path: 
           type: string
           description: "absolute path the file to the output BED file (derived attribute)"
+        output_bigbed_path: 
+          type: string
+          description: "absolute path the file to the output bigBed file (derived attribute)"
         genome:
           type: string
           description: "organism genome code"
