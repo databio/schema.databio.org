@@ -24,4 +24,4 @@ properties:
     henge_class: "seqarray"
     items:
       type: string
-      henge_class: seq
+      henge_class: sequence
