@@ -39,7 +39,7 @@ properties:
               items:
                 type: string
         umi_len:
-          type: integer
+          type: string
           description: "Length of the Unique Molecular Identifier, if any"
       required:
         - sample_name
