@@ -4,7 +4,9 @@ Welcome to lab schema repository. The schemas are hosted on github pages.
 
 ## Accessing a schema
 
-You can access schemas at the URLS: https://schema.databio.org/File.yaml.  For example: https://schema.databio.org/PEP/pep.yaml
+You can access schemas at the URLS: https://schema.databio.org/File.yaml.  For example: https://schema.databio.org/pep/2.0.0.yaml
+
+This corresponds to the indicated folder in this repo.
 
 ## Contributing a schema
 

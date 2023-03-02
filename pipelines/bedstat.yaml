@@ -14,7 +14,6 @@ properties:
         genome:
           type: string
           description: "organism reference genome"
-          enum: ["hg18", "hg19", "hg38", "mm9", "mm10"]
         cell_type:
           type: string
           description: "cell type used to perform the experimental protocol"
