@@ -1,0 +1,38 @@
+{
+    "ACD List": {
+        "url": "refget/ACDList.yaml",
+        "description": "Schema for a list of ACDs; analogous to a collection of fasta files"
+    },
+    "Annotated Collection Digest": {
+        "url": "refget/annotated_collection_digest.yaml",
+        "description": "Schema for an Annotated Collection Digest; this is analogous to a single fasta file with metadata."
+    },
+    "Annotated Sequence Digest": {
+        "url": "refget/annotated_sequence_digest.yaml",
+        "description": "Schema for an Annotated Sequence Digest; a digested Sequence plus metadata"
+    },
+    "Annotated Arrayed Sequence Collection": {
+        "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
+        "description": "A collection of sequences"
+    },
+    "Annotated Sequence List": {
+        "url": "refget/AnnotatedSequenceList.yaml",
+        "description": "Schema for List of ASDs"
+    },
+    "Arrayed Nested Sequence Collection": {
+        "url": "refget/ArrayedNestedSequenceCollection.yaml",
+        "description": "A collection of sequences"
+    },
+    "Arrayed Sequence Collection": {
+        "url": "refget/ArrayedSequenceCollection.yaml",
+        "description": "A collection of sequences"
+    },
+    "ASD List": {
+        "url": "refget/ASDList.yaml",
+        "description": "Schema for List of ASDs"
+    },
+    "Custom Annotated Arrayed Sequence Collection": {
+        "url": "refget/CustomAnnotatedArrayedSequenceCollection.yaml",
+        "description": "A collection of sequences"
+    }
+}
