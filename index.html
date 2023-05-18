@@ -7,3 +7,35 @@ Welcome to schema.databio.org. This is a repository of schemas for biological da
 You can browse available schemas at the repository on github:
 
 <a href="https://github.com/databio/schema.databio.org">https://github.com/databio/schema.databio.org</a>
+
+<h2>List of templates (<a href="https://schema.databio.org/list.json">JSON</a>)</h2>
+    <div id="templateList"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+    getList = async () => {
+      var tplList = await fetch("https://schema.databio.org/list.json")
+      .then(response => response.json())
+      .then(response => {
+        console.log(response)
+        tplList = Object.values(response)
+        var tplHTML = "";
+        for (const tpl in response) {
+          console.log(`${tpl}: ${response[tpl]}`);
+          tplHTML += `<h3>${tpl}</h3>
+          <span class="label">Description</span>: ${response[tpl]["description"]}<br>
+          <span class="label">Relative Path</span>: <span class="path">${response[tpl]["url"]}</span><br>
+          <span class="label">API Endpoint</span>:  <a href="${response[tpl]["url"]}">https://schema.databio.org/${response[tpl]["url"]}</a>`
+
+        }
+        document.getElementById("templateList").innerHTML = tplHTML
+        return tplList
+      })
+      return tplList;
+    }
+    var tplList;
+    tplList = getList()
+  </script>

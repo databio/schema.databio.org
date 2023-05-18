@@ -1,38 +1,110 @@
 {
-    "ACD List": {
-        "url": "refget/ACDList.yaml",
-        "description": "Schema for a list of ACDs; analogous to a collection of fasta files"
+    "refgenie_build": {
+        "url": "refgenie/refgenie_build.yaml",
+        "description": null
     },
-    "Annotated Collection Digest": {
-        "url": "refget/annotated_collection_digest.yaml",
-        "description": "Schema for an Annotated Collection Digest; this is analogous to a single fasta file with metadata."
+    "2.0.0": {
+        "url": "pep/2.0.0.yaml",
+        "description": null
     },
-    "Annotated Sequence Digest": {
-        "url": "refget/annotated_sequence_digest.yaml",
-        "description": "Schema for an Annotated Sequence Digest; a digested Sequence plus metadata"
+    "2.1.0": {
+        "url": "pep/2.1.0.yaml",
+        "description": null
     },
-    "Annotated Arrayed Sequence Collection": {
-        "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
-        "description": "A collection of sequences"
+    "manifest": {
+        "url": "bulker/manifest.yaml",
+        "description": null
     },
-    "Annotated Sequence List": {
-        "url": "refget/AnnotatedSequenceList.yaml",
-        "description": "Schema for List of ASDs"
+    "importlist": {
+        "url": "bulker/importlist.yaml",
+        "description": null
     },
-    "Arrayed Nested Sequence Collection": {
-        "url": "refget/ArrayedNestedSequenceCollection.yaml",
-        "description": "A collection of sequences"
+    "cdid": {
+        "url": "bulker/cdid.yaml",
+        "description": null
     },
-    "Arrayed Sequence Collection": {
+    "cmdlist": {
+        "url": "bulker/cmdlist.yaml",
+        "description": null
+    },
+    "bedbuncher": {
+        "url": "pipelines/bedbuncher.yaml",
+        "description": null
+    },
+    "pepatac": {
+        "url": "pipelines/pepatac.yaml",
+        "description": null
+    },
+    "bedmaker": {
+        "url": "pipelines/bedmaker.yaml",
+        "description": null
+    },
+    "ProseqPEP": {
+        "url": "pipelines/ProseqPEP.yaml",
+        "description": null
+    },
+    "pipeline_interface": {
+        "url": "pipelines/pipeline_interface.yaml",
+        "description": null
+    },
+    "bedstat": {
+        "url": "pipelines/bedstat.yaml",
+        "description": null
+    },
+    "ArrayedSequenceCollection": {
         "url": "refget/ArrayedSequenceCollection.yaml",
-        "description": "A collection of sequences"
+        "description": null
     },
-    "ASD List": {
+    "AnnotatedArrayedSequenceCollection": {
+        "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
+        "description": null
+    },
+    "annotated_collection_digest": {
+        "url": "refget/annotated_collection_digest.yaml",
+        "description": null
+    },
+    "ASDList": {
         "url": "refget/ASDList.yaml",
-        "description": "Schema for List of ASDs"
+        "description": null
     },
-    "Custom Annotated Arrayed Sequence Collection": {
+    "annotated_sequence_digest": {
+        "url": "refget/annotated_sequence_digest.yaml",
+        "description": null
+    },
+    "sequence": {
+        "url": "refget/sequence.yaml",
+        "description": null
+    },
+    "TASeqCol": {
+        "url": "refget/TASeqCol.yaml",
+        "description": null
+    },
+    "CustomAnnotatedArrayedSequenceCollection": {
         "url": "refget/CustomAnnotatedArrayedSequenceCollection.yaml",
-        "description": "A collection of sequences"
+        "description": null
+    },
+    "SeqColArraySetInherent": {
+        "url": "refget/SeqColArraySetInherent.yaml",
+        "description": null
+    },
+    "AnnotatedSequenceList": {
+        "url": "refget/AnnotatedSequenceList.yaml",
+        "description": null
+    },
+    "ArrayedNestedSequenceCollection": {
+        "url": "refget/ArrayedNestedSequenceCollection.yaml",
+        "description": null
+    },
+    "RawSeqCol": {
+        "url": "refget/RawSeqCol.yaml",
+        "description": null
+    },
+    "ACDList": {
+        "url": "refget/ACDList.yaml",
+        "description": null
+    },
+    "SeqColArraySet": {
+        "url": "refget/SeqColArraySet.yaml",
+        "description": null
     }
 }
