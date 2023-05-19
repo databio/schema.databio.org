@@ -3,28 +3,20 @@
         "url": "refgenie/refgenie_build.yaml",
         "description": null
     },
-    "2.0.0": {
-        "url": "pep/2.0.0.yaml",
+    "bedstat": {
+        "url": "pipelines/bedstat.yaml",
         "description": null
     },
-    "2.1.0": {
-        "url": "pep/2.1.0.yaml",
+    "pipeline_interface": {
+        "url": "pipelines/pipeline_interface.yaml",
         "description": null
     },
-    "manifest": {
-        "url": "bulker/manifest.yaml",
+    "ProseqPEP": {
+        "url": "pipelines/ProseqPEP.yaml",
         "description": null
     },
-    "importlist": {
-        "url": "bulker/importlist.yaml",
-        "description": null
-    },
-    "cdid": {
-        "url": "bulker/cdid.yaml",
-        "description": null
-    },
-    "cmdlist": {
-        "url": "bulker/cmdlist.yaml",
+    "bedmaker": {
+        "url": "pipelines/bedmaker.yaml",
         "description": null
     },
     "bedbuncher": {
@@ -35,32 +27,56 @@
         "url": "pipelines/pepatac.yaml",
         "description": null
     },
-    "bedmaker": {
-        "url": "pipelines/bedmaker.yaml",
+    "importlist": {
+        "url": "bulker/importlist.yaml",
         "description": null
     },
-    "ProseqPEP": {
-        "url": "pipelines/ProseqPEP.yaml",
+    "manifest": {
+        "url": "bulker/manifest.yaml",
         "description": null
     },
-    "pipeline_interface": {
-        "url": "pipelines/pipeline_interface.yaml",
+    "cmdlist": {
+        "url": "bulker/cmdlist.yaml",
         "description": null
     },
-    "bedstat": {
-        "url": "pipelines/bedstat.yaml",
+    "cdid": {
+        "url": "bulker/cdid.yaml",
+        "description": null
+    },
+    "annotated_collection_digest": {
+        "url": "refget/annotated_collection_digest.yaml",
+        "description": null
+    },
+    "SeqColArraySetInherent": {
+        "url": "refget/SeqColArraySetInherent.yaml",
+        "description": null
+    },
+    "ArrayedNestedSequenceCollection": {
+        "url": "refget/ArrayedNestedSequenceCollection.yaml",
+        "description": null
+    },
+    "ACDList": {
+        "url": "refget/ACDList.yaml",
+        "description": null
+    },
+    "CustomAnnotatedArrayedSequenceCollection": {
+        "url": "refget/CustomAnnotatedArrayedSequenceCollection.yaml",
         "description": null
     },
     "ArrayedSequenceCollection": {
         "url": "refget/ArrayedSequenceCollection.yaml",
         "description": null
     },
-    "AnnotatedArrayedSequenceCollection": {
-        "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
+    "sequence": {
+        "url": "refget/sequence.yaml",
         "description": null
     },
-    "annotated_collection_digest": {
-        "url": "refget/annotated_collection_digest.yaml",
+    "SeqColArraySet": {
+        "url": "refget/SeqColArraySet.yaml",
+        "description": null
+    },
+    "AnnotatedArrayedSequenceCollection": {
+        "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
         "description": null
     },
     "ASDList": {
@@ -71,40 +87,24 @@
         "url": "refget/annotated_sequence_digest.yaml",
         "description": null
     },
-    "sequence": {
-        "url": "refget/sequence.yaml",
-        "description": null
-    },
-    "TASeqCol": {
-        "url": "refget/TASeqCol.yaml",
-        "description": null
-    },
-    "CustomAnnotatedArrayedSequenceCollection": {
-        "url": "refget/CustomAnnotatedArrayedSequenceCollection.yaml",
-        "description": null
-    },
-    "SeqColArraySetInherent": {
-        "url": "refget/SeqColArraySetInherent.yaml",
+    "RawSeqCol": {
+        "url": "refget/RawSeqCol.yaml",
         "description": null
     },
     "AnnotatedSequenceList": {
         "url": "refget/AnnotatedSequenceList.yaml",
         "description": null
     },
-    "ArrayedNestedSequenceCollection": {
-        "url": "refget/ArrayedNestedSequenceCollection.yaml",
+    "TASeqCol": {
+        "url": "refget/TASeqCol.yaml",
         "description": null
     },
-    "RawSeqCol": {
-        "url": "refget/RawSeqCol.yaml",
+    "2.0.0": {
+        "url": "pep/2.0.0.yaml",
         "description": null
     },
-    "ACDList": {
-        "url": "refget/ACDList.yaml",
-        "description": null
-    },
-    "SeqColArraySet": {
-        "url": "refget/SeqColArraySet.yaml",
+    "2.1.0": {
+        "url": "pep/2.1.0.yaml",
         "description": null
     }
 }
