@@ -2,6 +2,7 @@ import glob
 import json
 import os
 
+
 def readme(f):
 	readme_pth = os.path.join(*f_split[:-1], "README_" + f_split[-1] + ".txt")
 	if os.path.isfile(readme_pth):
@@ -10,6 +11,7 @@ def readme(f):
 		return content
 	else:
 		return None
+
 
 files_list = glob.glob("**/*.yaml", recursive=True)
 
@@ -26,4 +28,5 @@ for f in files_list:
 		"description": readme(f)
 	}
 
-print(json.dumps(tpls, indent=4))
+with open("list.json", "w") as outfile:
+	json.dump(tpls, outfile, indent=4)

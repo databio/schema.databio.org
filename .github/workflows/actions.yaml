@@ -1,0 +1,30 @@
+name: Generate and push JSON schema list
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate-and-push-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 'python-latest'
+
+      - name: Generate JSON
+        run: python index_contents.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Generated JSON schema list"
+          git push
