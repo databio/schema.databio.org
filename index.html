@@ -105,6 +105,7 @@
         for (const tpl in response) {
           console.log(`${tpl}: ${response[tpl]}`);
           tplHTML += `<h3>${tpl}</h3>
+          <span class="label">Project</span>: ${response[tpl]["project"]}<br>
           <span class="label">Description</span>: ${response[tpl]["description"]}<br>
           <span class="label">Relative Path</span>: <span class="path">${response[tpl]["url"]}</span><br>
           <span class="label">API Endpoint</span>:  <a href="${response[tpl]["url"]}">https://schema.databio.org/${response[tpl]["url"]}</a>`

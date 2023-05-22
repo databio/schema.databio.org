@@ -20,9 +20,11 @@ for f in files_list:
     basename, ext = os.path.splitext(f)
     f_split = basename.split("/")
     f_split
+    namespace = f_split[0]
     tpl_name = f_split[-1]
     description = read_yaml_description(f)
     tpls[tpl_name] = {
+        "project": namespace,
         "url": f,
         "description": description
     }
