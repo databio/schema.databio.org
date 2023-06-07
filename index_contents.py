@@ -23,7 +23,7 @@ for f in files_list:
     namespace = f_split[0]
     tpl_name = f_split[-1]
     description = read_yaml_description(f)
-    tpls[tpl_name] = {
+    tpls[basename] = {
         "project": namespace,
         "url": f,
         "description": description
