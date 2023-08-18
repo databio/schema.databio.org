@@ -20,7 +20,7 @@ properties:
         type: string
         pattern: "^\\S*$"
         description: "Name of the column in sample table to use as an index. It's 'sample_name' by default"
-      sample_table_index: 
+      subsample_table_index: 
         type: array
         items:
           type: string
