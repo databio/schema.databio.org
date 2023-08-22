@@ -58,7 +58,8 @@ Thumbs.db
 
 doc/
 build/
-dist/
+node_modules/
 refgenie.egg-info/
 
 *ipynb_checkpoints*
+
