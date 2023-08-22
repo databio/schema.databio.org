@@ -122,7 +122,7 @@ const TemplateList = () => {
             <>
               <div className="fw-bold mt-2">
                 <Breadcrumb>
-                  <Breadcrumb.Item href="/schemas">Home</Breadcrumb.Item>
+                  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                   <Breadcrumb.Item href="https://ayobi.github.io/schemas/#/pep/">pep</Breadcrumb.Item>
                   <Breadcrumb.Item active>{yamlTitleString}</Breadcrumb.Item>
                 </Breadcrumb>
