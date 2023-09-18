@@ -25,7 +25,7 @@ properties:
     items:
       type: string
       henge_class: sequence
-  names_lengths:
+  sorted_name_length_pairs:
     type: array
     henge_class: "strarray"
     items:
