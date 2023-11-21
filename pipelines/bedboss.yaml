@@ -25,6 +25,9 @@ properties:
         description:
           type: string
           description: "freeform description of the sample"
+        open_signal_matrix:
+          type: string
+          description: "a full path to the openSignalMatrix required for the tissue"
         chrom_sizes:
           type: string
           description: "a full path to the chrom.sizes required for the bedtobigbed conversion"
