@@ -1,4 +1,69 @@
 {
+    "pipelines/bedmaker": {
+        "project": "pipelines",
+        "url": "pipelines/bedmaker.yaml",
+        "description": "bedmaker PEP schema"
+    },
+    "pipelines/bedbuncher": {
+        "project": "pipelines",
+        "url": "pipelines/bedbuncher.yaml",
+        "description": "bedbuncher PEP schema"
+    },
+    "pipelines/pipeline_interface": {
+        "project": "pipelines",
+        "url": "pipelines/pipeline_interface.yaml",
+        "description": "pipeline interface schema"
+    },
+    "pipelines/geofetch_sra_convert": {
+        "project": "pipelines",
+        "url": "pipelines/geofetch_sra_convert.yaml",
+        "description": "A PEP for converting SRA files into fastq or bam format."
+    },
+    "pipelines/pepatac": {
+        "project": "pipelines",
+        "url": "pipelines/pepatac.yaml",
+        "description": "A PEP for ATAC-seq samples for the PEPATAC pipeline."
+    },
+    "pipelines/ProseqPEP": {
+        "project": "pipelines",
+        "url": "pipelines/ProseqPEP.yaml",
+        "description": "A PEP for nascent RNA samples for the PEPPRO pipeline."
+    },
+    "pipelines/bedstat": {
+        "project": "pipelines",
+        "url": "pipelines/bedstat.yaml",
+        "description": "bedstat PEP schema"
+    },
+    "pipelines/bedboss": {
+        "project": "pipelines",
+        "url": "pipelines/bedboss.yaml",
+        "description": "bedboss run-all pep schema"
+    },
+    "bulker/importlist": {
+        "project": "bulker",
+        "url": "bulker/importlist.yaml",
+        "description": "A priority list of bulker manifests that are imported."
+    },
+    "bulker/cdid": {
+        "project": "bulker",
+        "url": "bulker/cdid.yaml",
+        "description": "Two druids that describe the manifest"
+    },
+    "bulker/manifest": {
+        "project": "bulker",
+        "url": "bulker/manifest.yaml",
+        "description": "Schema for bulker manifest"
+    },
+    "bulker/cmdlist": {
+        "project": "bulker",
+        "url": "bulker/cmdlist.yaml",
+        "description": "A list of commands and the containers that run them."
+    },
+    "refgenie/refgenie_build": {
+        "project": "refgenie",
+        "url": "refgenie/refgenie_build.yaml",
+        "description": "databio_genomes PEP schema"
+    },
     "pep/2.1.0": {
         "project": "pep",
         "url": "pep/2.1.0.yaml",
@@ -9,94 +74,29 @@
         "url": "pep/2.0.0.yaml",
         "description": "Schema for a minimal PEP"
     },
-    "pipelines/geofetch_sra_convert": {
-        "project": "pipelines",
-        "url": "pipelines/geofetch_sra_convert.yaml",
-        "description": "A PEP for converting SRA files into fastq or bam format."
-    },
-    "pipelines/pipeline_interface": {
-        "project": "pipelines",
-        "url": "pipelines/pipeline_interface.yaml",
-        "description": "pipeline interface schema"
-    },
-    "pipelines/bedmaker": {
-        "project": "pipelines",
-        "url": "pipelines/bedmaker.yaml",
-        "description": "bedmaker PEP schema"
-    },
-    "pipelines/ProseqPEP": {
-        "project": "pipelines",
-        "url": "pipelines/ProseqPEP.yaml",
-        "description": "A PEP for nascent RNA samples for the PEPPRO pipeline."
-    },
-    "pipelines/bedbuncher": {
-        "project": "pipelines",
-        "url": "pipelines/bedbuncher.yaml",
-        "description": "bedbuncher PEP schema"
-    },
-    "pipelines/pepatac": {
-        "project": "pipelines",
-        "url": "pipelines/pepatac.yaml",
-        "description": "A PEP for ATAC-seq samples for the PEPATAC pipeline."
-    },
-    "pipelines/bedstat": {
-        "project": "pipelines",
-        "url": "pipelines/bedstat.yaml",
-        "description": "bedstat PEP schema"
-    },
-    "refgenie/refgenie_build": {
-        "project": "refgenie",
-        "url": "refgenie/refgenie_build.yaml",
-        "description": "databio_genomes PEP schema"
-    },
-    "refget/annotated_sequence_digest": {
-        "project": "refget",
-        "url": "refget/annotated_sequence_digest.yaml",
-        "description": "Schema for an Annotated Sequence Digest; a digested Sequence plus metadata"
-    },
     "refget/AnnotatedSequenceList": {
         "project": "refget",
         "url": "refget/AnnotatedSequenceList.yaml",
         "description": "Schema for List of ASDs"
     },
-    "refget/SeqColArraySet": {
+    "refget/ArrayedSequenceCollection": {
         "project": "refget",
-        "url": "refget/SeqColArraySet.yaml",
-        "description": "SeqColArraySet"
-    },
-    "refget/annotated_collection_digest": {
-        "project": "refget",
-        "url": "refget/annotated_collection_digest.yaml",
-        "description": "Schema for an Annotated Collection Digest; this is analogous to a single fasta file with metadata."
+        "url": "refget/ArrayedSequenceCollection.yaml",
+        "description": "A collection of sequences"
     },
     "refget/TASeqCol": {
         "project": "refget",
         "url": "refget/TASeqCol.yaml",
         "description": "TAseqcol"
     },
-    "refget/ArrayedNestedSequenceCollection": {
-        "project": "refget",
-        "url": "refget/ArrayedNestedSequenceCollection.yaml",
-        "description": "A collection of sequences"
-    },
-    "refget/ASDList": {
-        "project": "refget",
-        "url": "refget/ASDList.yaml",
-        "description": "Schema for List of ASDs"
-    },
     "refget/AnnotatedArrayedSequenceCollection": {
         "project": "refget",
         "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
         "description": "A collection of sequences"
     },
-    "refget/RawSeqCol": {
+    "refget/SeqColArraySet": {
         "project": "refget",
-        "url": "refget/RawSeqCol.yaml",
-        "description": "Schema for List of ASDs"
-    },
-    "refget/SeqColArraySetInherent": {
-        "project": "refget",
-        "url": "refget/SeqColArraySetInherent.yaml",
+        "url": "refget/SeqColArraySet.yaml",
         "description": "SeqColArraySet"
     },
     "refget/ACDList": {
@@ -104,39 +104,44 @@
         "url": "refget/ACDList.yaml",
         "description": "Schema for a list of ACDs; analogous to a collection of fasta files"
     },
+    "refget/SeqColArraySetInherent": {
+        "project": "refget",
+        "url": "refget/SeqColArraySetInherent.yaml",
+        "description": "SeqColArraySet"
+    },
+    "refget/annotated_sequence_digest": {
+        "project": "refget",
+        "url": "refget/annotated_sequence_digest.yaml",
+        "description": "Schema for an Annotated Sequence Digest; a digested Sequence plus metadata"
+    },
+    "refget/annotated_collection_digest": {
+        "project": "refget",
+        "url": "refget/annotated_collection_digest.yaml",
+        "description": "Schema for an Annotated Collection Digest; this is analogous to a single fasta file with metadata."
+    },
     "refget/CustomAnnotatedArrayedSequenceCollection": {
         "project": "refget",
         "url": "refget/CustomAnnotatedArrayedSequenceCollection.yaml",
         "description": "A collection of sequences"
     },
-    "refget/ArrayedSequenceCollection": {
+    "refget/RawSeqCol": {
         "project": "refget",
-        "url": "refget/ArrayedSequenceCollection.yaml",
-        "description": "A collection of sequences"
+        "url": "refget/RawSeqCol.yaml",
+        "description": "Schema for List of ASDs"
     },
     "refget/sequence": {
         "project": "refget",
         "url": "refget/sequence.yaml",
         "description": "Schema for a single raw sequence"
     },
-    "bulker/manifest": {
-        "project": "bulker",
-        "url": "bulker/manifest.yaml",
-        "description": "Schema for bulker manifest"
+    "refget/ASDList": {
+        "project": "refget",
+        "url": "refget/ASDList.yaml",
+        "description": "Schema for List of ASDs"
     },
-    "bulker/importlist": {
-        "project": "bulker",
-        "url": "bulker/importlist.yaml",
-        "description": "A priority list of bulker manifests that are imported."
-    },
-    "bulker/cmdlist": {
-        "project": "bulker",
-        "url": "bulker/cmdlist.yaml",
-        "description": "A list of commands and the containers that run them."
-    },
-    "bulker/cdid": {
-        "project": "bulker",
-        "url": "bulker/cdid.yaml",
-        "description": "Two druids that describe the manifest"
+    "refget/ArrayedNestedSequenceCollection": {
+        "project": "refget",
+        "url": "refget/ArrayedNestedSequenceCollection.yaml",
+        "description": "A collection of sequences"
     }
 }
