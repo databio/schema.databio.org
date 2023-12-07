@@ -20,7 +20,7 @@ properties:
           type: string
           description: "organism genome code"
         format_type:
-          type: boolean
+          type: string
           description: "whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
           enum: [ "narrowPeak", "broadPeak" ]
         description:
