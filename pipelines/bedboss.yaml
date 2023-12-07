@@ -19,18 +19,19 @@ properties:
         genome:
           type: string
           description: "organism genome code"
-        narrowpeak:
+        format_type:
           type: boolean
           description: "whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
+          enum: [ "narrowPeak", "broadPeak" ]
         description:
           type: string
           description: "freeform description of the sample"
         open_signal_matrix:
           type: string
-          description: "a full path to the openSignalMatrix required for the tissue"
+          description: "A full path to the openSignalMatrix required for the tissue"
         chrom_sizes:
           type: string
-          description: "a full path to the chrom.sizes required for the bedtobigbed conversion"
+          description: "A full path to the chrom.sizes required for the bedtobigbed conversion"
         treatment:
           type: string
           description: "freeform description of the sample treatment"
