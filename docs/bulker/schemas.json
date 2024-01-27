@@ -1,9 +1,9 @@
 {
-    "cdid": {
+    "manifest": {
         "namespace": "bulker",
-        "schema": "cdid",
-        "url": "bulker/cdid.yaml",
-        "description": "Two druids that describe the manifest"
+        "schema": "manifest",
+        "url": "bulker/manifest.yaml",
+        "description": "Schema for bulker manifest"
     },
     "cmdlist": {
         "namespace": "bulker",
@@ -11,16 +11,16 @@
         "url": "bulker/cmdlist.yaml",
         "description": "A list of commands and the containers that run them."
     },
-    "manifest": {
-        "namespace": "bulker",
-        "schema": "manifest",
-        "url": "bulker/manifest.yaml",
-        "description": "Schema for bulker manifest"
-    },
     "importlist": {
         "namespace": "bulker",
         "schema": "importlist",
         "url": "bulker/importlist.yaml",
         "description": "A priority list of bulker manifests that are imported."
+    },
+    "cdid": {
+        "namespace": "bulker",
+        "schema": "cdid",
+        "url": "bulker/cdid.yaml",
+        "description": "Two druids that describe the manifest"
     }
 }
