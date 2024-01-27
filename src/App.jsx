@@ -59,7 +59,7 @@ const SchemaDashboard = (props) => {
         <b>Endpoint:</b> https://schema.databio.org/{`${props.namespace}/${props.schema}.yaml`}<br/>
         <b>Preview (this page):</b> https://schema.databio.org/?namespace={`${props.namespace}`}&schema={`${props.schema}`}<br/>
 
-        <button className="btn btn-primary my-4" href={`/${props.namespace}/${props.schema}.yaml`}>Download schema</button>
+        <a href={`/${props.namespace}/${props.schema}.yaml`}><button className="btn btn-primary my-4" >Download schema</button></a>
 
         <h4>Preview</h4>
         <pre style={divStyle}><code>{schema}</code></pre>
