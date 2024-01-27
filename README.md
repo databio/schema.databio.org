@@ -24,7 +24,7 @@ This will change in the future, but for now:
 
 - source schemas are found in the `/schemas` subfolder. Edit there.
 - `index_contents.py` will create all the API endpoints and copy the schemas themselves into `/public`, so they will be served by react
-- run `npm run bulid` to create the `/dist` folder from the source in `/src` (and `/public`).
+- run `npm run build` to create the `/dist` folder from the source in `/src` (and `/public`).
 - run `mv dist docs` since github pages wants to host from `/docs` only. (hack!)
 - Host the site on github pages from the `docs` folder
 
