@@ -18,5 +18,14 @@ First, you have to write a schema yaml file. It should follow json-schema format
 
 After creating your schema file, you can contribute it to this repository so that you and others can more easily load it.  Name your schema yaml file with the name of the schema. Schemas in the registry are divided into namespaces, which are represented as subfolders in this repository. So, place your schema into an appropriate subfolder, and then open a pull request.
 
+## Dev for react v2
+
+This will change in the future, but for now:
+
+- source schemas are found in the `/schemas` subfolder. Edit there.
+- `index_contents.py` will create all the API endpoints and copy the schemas themselves into `/public`, so they will be served by react
+- run `npm run bulid` to create the `/dist` folder from the source in `/src` (and `/public`).
+- Host the site on github pages from the `dist` folder?
+
 
 
