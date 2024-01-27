@@ -1,10 +1,4 @@
 {
-    "bedbuncher": {
-        "namespace": "pipelines",
-        "schema": "bedbuncher",
-        "url": "pipelines/bedbuncher.yaml",
-        "description": "bedbuncher PEP schema"
-    },
     "pipeline_interface": {
         "namespace": "pipelines",
         "schema": "pipeline_interface",
@@ -17,17 +11,23 @@
         "url": "pipelines/geofetch_sra_convert.yaml",
         "description": "A PEP for converting SRA files into fastq or bam format."
     },
-    "bedboss": {
+    "bedmaker": {
         "namespace": "pipelines",
-        "schema": "bedboss",
-        "url": "pipelines/bedboss.yaml",
-        "description": "bedboss run-all pep schema"
+        "schema": "bedmaker",
+        "url": "pipelines/bedmaker.yaml",
+        "description": "bedmaker PEP schema"
     },
-    "bedstat": {
+    "bedbuncher": {
         "namespace": "pipelines",
-        "schema": "bedstat",
-        "url": "pipelines/bedstat.yaml",
-        "description": "bedstat PEP schema"
+        "schema": "bedbuncher",
+        "url": "pipelines/bedbuncher.yaml",
+        "description": "bedbuncher PEP schema"
+    },
+    "pepatac": {
+        "namespace": "pipelines",
+        "schema": "pepatac",
+        "url": "pipelines/pepatac.yaml",
+        "description": "A PEP for ATAC-seq samples for the PEPATAC pipeline."
     },
     "ProseqPEP": {
         "namespace": "pipelines",
@@ -35,16 +35,16 @@
         "url": "pipelines/ProseqPEP.yaml",
         "description": "A PEP for nascent RNA samples for the PEPPRO pipeline."
     },
-    "bedmaker": {
+    "bedstat": {
         "namespace": "pipelines",
-        "schema": "bedmaker",
-        "url": "pipelines/bedmaker.yaml",
-        "description": "bedmaker PEP schema"
+        "schema": "bedstat",
+        "url": "pipelines/bedstat.yaml",
+        "description": "bedstat PEP schema"
     },
-    "pepatac": {
+    "bedboss": {
         "namespace": "pipelines",
-        "schema": "pepatac",
-        "url": "pipelines/pepatac.yaml",
-        "description": "A PEP for ATAC-seq samples for the PEPATAC pipeline."
+        "schema": "bedboss",
+        "url": "pipelines/bedboss.yaml",
+        "description": "bedboss run-all pep schema"
     }
 }

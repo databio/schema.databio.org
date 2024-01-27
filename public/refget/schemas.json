@@ -1,10 +1,4 @@
 {
-    "annotated_collection_digest": {
-        "namespace": "refget",
-        "schema": "annotated_collection_digest",
-        "url": "refget/annotated_collection_digest.yaml",
-        "description": "Schema for an Annotated Collection Digest; this is analogous to a single fasta file with metadata."
-    },
     "SeqColArraySetInherent": {
         "namespace": "refget",
         "schema": "SeqColArraySetInherent",
@@ -17,16 +11,58 @@
         "url": "refget/sequence.yaml",
         "description": "Schema for a single raw sequence"
     },
+    "annotated_collection_digest": {
+        "namespace": "refget",
+        "schema": "annotated_collection_digest",
+        "url": "refget/annotated_collection_digest.yaml",
+        "description": "Schema for an Annotated Collection Digest; this is analogous to a single fasta file with metadata."
+    },
+    "ArrayedNestedSequenceCollection": {
+        "namespace": "refget",
+        "schema": "ArrayedNestedSequenceCollection",
+        "url": "refget/ArrayedNestedSequenceCollection.yaml",
+        "description": "A collection of sequences"
+    },
+    "ASDList": {
+        "namespace": "refget",
+        "schema": "ASDList",
+        "url": "refget/ASDList.yaml",
+        "description": "Schema for List of ASDs"
+    },
+    "annotated_sequence_digest": {
+        "namespace": "refget",
+        "schema": "annotated_sequence_digest",
+        "url": "refget/annotated_sequence_digest.yaml",
+        "description": "Schema for an Annotated Sequence Digest; a digested Sequence plus metadata"
+    },
+    "ACDList": {
+        "namespace": "refget",
+        "schema": "ACDList",
+        "url": "refget/ACDList.yaml",
+        "description": "Schema for a list of ACDs; analogous to a collection of fasta files"
+    },
+    "ArrayedSequenceCollection": {
+        "namespace": "refget",
+        "schema": "ArrayedSequenceCollection",
+        "url": "refget/ArrayedSequenceCollection.yaml",
+        "description": "A collection of sequences"
+    },
     "RawSeqCol": {
         "namespace": "refget",
         "schema": "RawSeqCol",
         "url": "refget/RawSeqCol.yaml",
         "description": "Schema for List of ASDs"
     },
-    "AnnotatedArrayedSequenceCollection": {
+    "TASeqCol": {
         "namespace": "refget",
-        "schema": "AnnotatedArrayedSequenceCollection",
-        "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
+        "schema": "TASeqCol",
+        "url": "refget/TASeqCol.yaml",
+        "description": "TAseqcol"
+    },
+    "CustomAnnotatedArrayedSequenceCollection": {
+        "namespace": "refget",
+        "schema": "CustomAnnotatedArrayedSequenceCollection",
+        "url": "refget/CustomAnnotatedArrayedSequenceCollection.yaml",
         "description": "A collection of sequences"
     },
     "SeqColArraySet": {
@@ -35,52 +71,16 @@
         "url": "refget/SeqColArraySet.yaml",
         "description": "SeqColArraySet"
     },
-    "ACDList": {
+    "AnnotatedArrayedSequenceCollection": {
         "namespace": "refget",
-        "schema": "ACDList",
-        "url": "refget/ACDList.yaml",
-        "description": "Schema for a list of ACDs; analogous to a collection of fasta files"
-    },
-    "TASeqCol": {
-        "namespace": "refget",
-        "schema": "TASeqCol",
-        "url": "refget/TASeqCol.yaml",
-        "description": "TAseqcol"
-    },
-    "ArrayedNestedSequenceCollection": {
-        "namespace": "refget",
-        "schema": "ArrayedNestedSequenceCollection",
-        "url": "refget/ArrayedNestedSequenceCollection.yaml",
+        "schema": "AnnotatedArrayedSequenceCollection",
+        "url": "refget/AnnotatedArrayedSequenceCollection.yaml",
         "description": "A collection of sequences"
-    },
-    "CustomAnnotatedArrayedSequenceCollection": {
-        "namespace": "refget",
-        "schema": "CustomAnnotatedArrayedSequenceCollection",
-        "url": "refget/CustomAnnotatedArrayedSequenceCollection.yaml",
-        "description": "A collection of sequences"
-    },
-    "annotated_sequence_digest": {
-        "namespace": "refget",
-        "schema": "annotated_sequence_digest",
-        "url": "refget/annotated_sequence_digest.yaml",
-        "description": "Schema for an Annotated Sequence Digest; a digested Sequence plus metadata"
     },
     "AnnotatedSequenceList": {
         "namespace": "refget",
         "schema": "AnnotatedSequenceList",
         "url": "refget/AnnotatedSequenceList.yaml",
         "description": "Schema for List of ASDs"
-    },
-    "ASDList": {
-        "namespace": "refget",
-        "schema": "ASDList",
-        "url": "refget/ASDList.yaml",
-        "description": "Schema for List of ASDs"
-    },
-    "ArrayedSequenceCollection": {
-        "namespace": "refget",
-        "schema": "ArrayedSequenceCollection",
-        "url": "refget/ArrayedSequenceCollection.yaml",
-        "description": "A collection of sequences"
     }
 }
