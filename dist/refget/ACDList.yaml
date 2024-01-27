@@ -1,0 +1,13 @@
+description: "Schema for a list of ACDs; analogous to a collection of fasta files"
+type: array
+items:
+  type: object
+  properties:
+    name:
+      type: string
+    collection_digest:
+      type: string
+  required:
+    - collection_digest
+  recursive:
+    - collection_digest

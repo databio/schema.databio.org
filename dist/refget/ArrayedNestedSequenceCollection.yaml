@@ -1,0 +1,44 @@
+description: "A collection of sequences"
+type: object
+henge_class: "ArrayedNestedSequenceCollection"
+properties:
+  seqcol:
+    type: object
+    henge_class: "SeqCol"
+    properties:
+      names:
+        type: array
+        henge_class: "Names"
+        items:
+          type: string
+      lengths:
+        type: array
+        henge_class: "Lengths"
+        items:
+          type: integer
+      sequences:
+        type: array
+        henge_class: "Sequences"
+        items:
+          type: string
+          henge_class: "Sequence"
+          description: "Actual sequence content"
+  topologies:
+    type: array
+    henge_class: "Topologies"
+    items:
+      type: string
+      enum: ["circular", "linear"]
+      default: "linear"
+  masks:
+    type: array
+    henge_class: "Masks"
+    items:
+      type: string
+  importances:
+    type: array
+    henge_class: "Importances"
+    items:
+      type: boolean
+required:
+  - lengths

@@ -1,0 +1,41 @@
+description: bedstat PEP schema
+imports: 
+  - http://schema.databio.org/pep/2.0.0.yaml
+
+properties:
+  samples:
+    type: array
+    items:
+      type: object
+      properties:
+        output_file_path: 
+          type: string
+          description: "absolute path to the output BED files (.bed or .bed.gz)"
+        genome:
+          type: string
+          description: "organism reference genome"
+        cell_type:
+          type: string
+          description: "cell type used to perform the experimental protocol"
+        antibody:
+          type: string
+          description: "TF or Histone mark antibody used if ChIP-seq experiment"
+        description:
+          type: string
+          description: "freeform description of the sample"
+        exp_protocol:
+          type: string
+          description: "experimental protocol used to generate the genomic regions"
+        data_source:
+          type: string
+          description: "source of the sample, preferably a GSE* code"
+        treatment:
+          type: string
+          description: "freeform description of the sample treatment"
+      required_files:
+        - output_file_path
+      required:
+        - output_file_path
+        - genome
+required:
+  - samples

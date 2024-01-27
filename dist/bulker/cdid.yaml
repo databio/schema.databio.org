@@ -1,0 +1,12 @@
+description: "Two druids that describe the manifest"
+type: object
+properties:
+  imports:
+    type: string
+  commands:
+    type: string
+recursive:
+  - imports
+  - commands
+required:
+  - commands
