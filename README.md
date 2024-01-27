@@ -33,3 +33,8 @@ TODO:
 - [ ] automate the above build steps
 - [ ] fix the breadcrumbs so they just update search params instead of triggering page refresh
 
+This is a `vite` site. Clone the repository and then start a development server with:
+
+```
+npm run dev
+```
