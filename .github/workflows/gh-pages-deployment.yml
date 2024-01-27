@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Auto-generate contents:
+      - name: Build static schema API contents
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
