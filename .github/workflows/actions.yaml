@@ -3,7 +3,7 @@ name: Generate and push JSON schema list
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   generate-and-push-json:
