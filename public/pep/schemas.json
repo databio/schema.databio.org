@@ -1,0 +1,14 @@
+{
+    "2.1.0": {
+        "namespace": "pep",
+        "schema": "2.1.0",
+        "url": "pep/2.1.0.yaml",
+        "description": "Schema for a minimal PEP"
+    },
+    "2.0.0": {
+        "namespace": "pep",
+        "schema": "2.0.0",
+        "url": "pep/2.0.0.yaml",
+        "description": "Schema for a minimal PEP"
+    }
+}

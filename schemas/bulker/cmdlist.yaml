@@ -1,0 +1,16 @@
+description: "A list of commands and the containers that run them."
+type: array
+items:
+  type: object
+  properties:
+    command:
+      type: string
+    docker_args:
+      type: string
+    docker_image:
+      type: string
+    docker_command:
+      type: string
+  required:
+    - command
+    - docker_image

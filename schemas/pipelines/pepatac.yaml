@@ -1,0 +1,51 @@
+description: A PEP for ATAC-seq samples for the PEPATAC pipeline.
+imports:
+  - http://schema.databio.org/pep/2.0.0.yaml
+properties:
+  samples:
+    type: array
+    items:
+      type: object
+      properties:
+        sample_name: 
+          type: string
+          description: "Name of the sample"
+        organism: 
+          type: string
+          description: "Organism"
+        protocol: 
+          type: string
+          description: "Must be an ATAC-seq or DNAse-seq sample"
+        genome:
+          type: string
+          description: "Refgenie genome registry identifier"
+        read_type:
+          type: string
+          description: "Is this single or paired-end data?"
+          enum: ["SINGLE", "PAIRED"]
+        read1:
+          anyOf:
+            - type: string
+              description: "Fastq file for read 1"
+            - type: array
+              items:
+                type: string
+        read2:
+          anyOf:
+            - type: string
+              description: "Fastq file for read 2 (for paired-end experiments)"
+            - type: array
+              items:
+                type: string
+      required_files:
+        - read1
+      files:
+        - read1
+        - read2
+      required:
+        - sample_name
+        - protocol
+        - read1
+        - genome
+required:
+  - samples

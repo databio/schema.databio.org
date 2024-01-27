@@ -1,0 +1,31 @@
+description: "Schema for bulker manifest"
+properties:
+  manifest:
+    type: object
+    properties:
+      name:
+        type: string
+      version:
+        type: string
+      imports:
+        type: array
+        items:
+          type: string
+      commands:
+        type: array
+        items:
+          type: object
+          properties:
+            command:
+              type: string
+            docker_args:
+              type: string
+            docker_image:
+              type: string
+            docker_command:
+              type: string
+          required:
+            - command
+            - docker_image
+    required:
+      - commands

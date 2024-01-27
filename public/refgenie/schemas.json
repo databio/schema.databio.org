@@ -1,0 +1,8 @@
+{
+    "refgenie_build": {
+        "namespace": "refgenie",
+        "schema": "refgenie_build",
+        "url": "refgenie/refgenie_build.yaml",
+        "description": "databio_genomes PEP schema"
+    }
+}
