@@ -151,7 +151,7 @@ const SchemaSelector = (props) => {
 
         <h2>Guide</h2>
         This is a schema registry and API. It is hosted on GitHub Pages. 
-        Schemas are identified by a <i>namespace</i> and <i>schema name</i>, put together to form a *registry path*, of this form:
+        Schemas are identified by a <i>namespace</i> and <i>schema name</i>, put together to form a <i>registry path</i>, of this form:
         
         <br/><br/>
 
