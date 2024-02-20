@@ -45,7 +45,7 @@ properties:
           description: "Main target of the experiment (e.g. H3K4_trimethylation)"
         study_reference:
           type: string
-          description: ...
+          description: Reference identifier of the study
         gene_id:
           type: string
           description: HGNC identifier for gene targeted by the experiment (e.g., specific transcription factor used as ChIP-seq antibody).
