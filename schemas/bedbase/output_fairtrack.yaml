@@ -20,7 +20,7 @@ properties:
           description: "organism name. (e.g. homo sapiens)"
         biospecimen_class:
           type: string
-          description: ????
+          description: (e.g. Cell)
         sample_type:
           type: object
           properties:
