@@ -1,0 +1,14 @@
+title: Demo pipestat output schema
+description: Demostrates primitive and object result types
+type: object
+properties:
+  pipeline_name: "refget"
+  samples:
+    type: object
+    properties:
+      value:
+        type: string
+        description: "Value of the object referred to by the key"
+      mydict:
+        type: object
+        description: "Can pipestat handle nested objects?"
