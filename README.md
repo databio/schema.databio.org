@@ -13,7 +13,7 @@ First, you have to write a schema yaml file. It should follow json-schema format
 
 After creating your schema file, you can contribute it to this repository so that you and others can more easily load it.  Name your schema yaml file with the name of the schema. Schemas in the registry are divided into namespaces, which are represented as subfolders in this repository. So, place your schema into an appropriate subfolder, and then open a pull request.
 
-## Devopment guide
+## Development guide
 
 The front-end is built in React, using `vite`. Clone the repository and then start a development server with:
 
