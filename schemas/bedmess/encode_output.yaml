@@ -1,0 +1,60 @@
+description: Attribute Standardizer Output Schema in alignment with ENCODE schema
+
+properties:
+  File accession: 
+    type: string
+    description: "File ID/Accession"
+  File Type : 
+    type: string
+    description: "File Types (eg. bed, bigWig)"
+  File format type:
+    type: string
+    description: "File Convention/Format (eg. narrowPeak)"
+  Output type:
+    type: string
+    description: "The output type provides additional information about the expected contents in the file."
+  File assembly:
+    type: string
+    description: "Type of Genome Assemblies (eg. GRCh38)"
+  Assay:
+    type: string
+    description: "The name of the assay performed"
+  Biosample term name:
+    type: string
+    description: "The human readable ontology name used to describe the biosample."
+  Biosample type:
+    type: string
+    description: "A categorization of biosamples into major groups(eg.induced pluripotent stem cell, stem cell)."
+  Biosample Organism:
+    type: string
+    description: "The species of the biosample."
+  Biosample treatments:
+    type: string
+    description: "The name of the chemical or biological agent applied to a biosample in order to elicit a response."
+  Biosample genetic modifications methods:
+    type: string
+    description: "Experimental Techniques used for genetic modification (eg. CRISPR)"
+  Biosample genetic modifications categories:
+    type: string
+    description: "Type of genetic modification (eg. insertion)"
+  Experiment Target:
+    type: string
+    description: "Experimental Targets (eg. H3K27ac-human)"
+  Library made from:
+    type: string
+    description: "Types of libraries created from biological samples."
+  Experiment date released:
+    type: string
+    description: "Date of the experiment release"
+  Project:
+    type: string
+    description: "The project under which the experiment was performed( eg. ENCODE)"
+  Lab:
+    type: string
+    description: "Lab where the processing took place."
+  File Download URL:
+    type: string
+    description: "File Download URL"
+required:
+  - None
+
