@@ -1,5 +1,5 @@
 title: An example Pipestat output schema
-description: A pipeline that uses pipestat to report sample and project level results.
+description: A pipeline that uses pipestat to report sample level results.
 type: object
 properties:
   pipeline_name: "default_pipeline_name"
