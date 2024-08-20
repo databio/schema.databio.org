@@ -1,0 +1,49 @@
+description: Attribute Standardizer Output Schema in alignment with FAIRtracks schema
+
+properties:
+  global_id: 
+    type: string
+    description: "Global sample identifier, resolvable by identifiers.org"
+  local_id:
+    type: string
+    description: "Submitter-local identifier for sample (eg. S00B1LH1)"
+  species_id:
+    type: string
+    description: "Species identifier, resolvable by identifiers.org (eg. taxonomy:9606)"
+  species_name:
+    type: string
+    description: "Species name (eg. Homo sapiens)"
+  donor_age:
+    type: string
+    description: "Sample donor age ranges (eg. 50-60)"
+  donor_ethnicity:
+    type: string 
+    description: "Ethnicity of the donor (eg. Northern European)"
+  donor_health_status:
+    type: string
+    description: "Health of the donor during sample collection eg. Normal, Chronic Lymphocytic Leukemia"
+  donor_id:
+    type: string
+    description: "Donor identifier eg.182CLL"
+  donor_sex:
+    type: string
+    description: "Sex of the donor eg. Male, Female, Unknown"
+  biospecimen_class_term_id:
+    type: string
+    description: "URL of ontology term used for classification of the sample"
+  biospecimen_class_term_label:
+    type: string
+    description: "Structural unit for the classification for the sample eg. Cell, Organism Part"
+  sample_type_term_id:
+    type: string
+    description: "URL of the sample term"
+  sample_type_term_label:
+    type: string
+    description: "Main classification of the sample eg. venous blood"
+  phenotype_term_id:
+    type: string
+    description: "Identifier for the phenotype"
+  phenotype_term_label:
+    type: string
+    description: "Main phenotype related to the sample eg. Acute Myeloid Leukemia"
+
