@@ -32,7 +32,7 @@ properties:
         treatment:
           type: string
           description: "freeform description of the sample treatment"
-      required_files:
+      tangible:
         - output_file_path
       required:
         - output_file_path

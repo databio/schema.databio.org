@@ -31,7 +31,7 @@ properties:
           type: string
           pattern: "^assets*|^params*|^files*"
           description: "type of the refgenie build function input"
-      files:
+      sizing:
         - local_input
       required:
         - sample_name
