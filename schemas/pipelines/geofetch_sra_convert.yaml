@@ -16,9 +16,9 @@ properties:
         SRR_files:
           type: string
           description: "SRR files"
-      required_files:
+      tangible:
         - SRR_files
-      files:
+      sizing:
         - SRR_files
       required:
         - sample_name

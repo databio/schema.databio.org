@@ -37,9 +37,9 @@ properties:
             - type: array
               items:
                 type: string
-      required_files:
+      tangible:
         - read1
-      files:
+      sizing:
         - read1
         - read2
       required:
