@@ -1,0 +1,81 @@
+description: bedboss output schema
+
+properties:
+  samples:
+    type: array
+    items:
+      type: object
+      properties:
+        sample_name:
+          type: string
+          description: "Name of the bed sample (digest)"
+        assembly_name:
+          type: string
+          description: "organism genome code (e.g. hg19, mm10)"
+        assembly_id:
+          type: string
+          description: "Genome assembly identifier - from refgenie"
+        bed_type:
+          type: string
+          description: "bed type (e.g. bed3 / bed6 / bed9+3)"
+          pattern: "^bed(?:[3-9]|1[0-5])(?:\+|$)[0-9]?+$"
+        format_type:
+          type: string
+          description: "whether the regions are narrow (transcription factor implies narrow, histone mark implies broad peaks)"
+          enum: [ "narrowpeak", "broadpeak", "bed" ]
+        organism:
+          type: string
+          description: "organism name (e.g. Homo sapiens)"
+        species_id:
+          type: string
+          description: "Taxonomy id based on NCBI database (e.g. taxonomy:9606)"
+        cell_type:
+          type: string
+          description: "cell type (e.g. K562)"
+        cell_line:
+          type: string
+          description: "cell line (e.g. C4-2B)"
+        exp_protocol:
+          type: string
+          description: "Molecular biology technique that was used in the experiment (e.g. DNase-seq, TF ChIP-seq, histone ChIP-seq, ATAC-seq)"
+        library_source:
+          type: string
+          description: "(e.g. genomic DNA, DNA, mRNA)"
+        target:
+          type: string
+          description: "The target of the experiment (e.g. H3K36me3)"
+        antibody:
+          type: string
+          description: "antibody used in the experiment (anti-H3K36me3)"
+        tissue:
+          type: string
+          description: "Tissue or organ used in the experiment (e.g blood / liver / brain)"
+        treatment:
+          type: string
+          description: "Treatment applied to the sample"
+        global_sample_id:
+          type: string
+          description: "Unique sample identifier of the bed source (e.g. 'encode:ENCBS192PUU', 'geo:GSM1234')"
+        global_experiment_id:
+          type: string
+          description: "Unique experiment identifier of the bed source (e.g. 'encode:ENCSR000EOT', 'geo:GSE1234')"
+        description:
+          type: string
+          description: "freeform description of the sample"
+        file_url:
+          type: string
+          description: "URL to the bed file"
+        file_name:
+          type: string
+          description: "Name of the bed file"
+
+      required:
+        - sample_name
+        - genome
+        - bed_type
+        - format_type
+        - file_url
+        - file_name
+
+required:
+  - samples
