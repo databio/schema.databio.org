@@ -1,0 +1,119 @@
+description: bedboss fairtrack output schema
+
+properties:
+  samples:
+    type: array
+    items:
+      type: object
+      properties:
+        local_id:
+          type: string
+          description: "Name of the bed sample (digest)"
+        global_id:
+          type: string
+          description: "Unique sample identifier of the bed source (e.g. 'encode:ENCBS192PUU', 'geo:GSM1234')"
+        species_id:
+          type: string
+          description: "Taxonomy id based on NCBI database (e.g. taxonomy:9606)"
+        species_name:
+          type: string
+          description: "organism name. (e.g. homo sapiens)"
+        biospecimen_class:
+          type: string
+          description: (e.g. Cell)
+        sample_type:
+          type: object
+          properties:
+            cell_type:
+              type: string
+              description: "cell type (e.g. K562)"
+            abnormal_cell_type:
+              type: string
+              description: ...
+            cell_line:
+              type: string
+              description: "cell line (e.g. C4-2B)"
+            organism_part:
+              type: string
+              description: "(e.g. liver)"
+
+        technique:
+          type: string
+          description: "Main technique used in experiment (e.g., laboratory, computational or statistical technique)"
+        target:
+          type: string
+          description: "Main target of the experiment (e.g. H3K4_trimethylation)"
+        study_reference:
+          type: string
+          description: Reference identifier of the study
+        gene_id:
+          type: string
+          description: HGNC identifier for gene targeted by the experiment (e.g., specific transcription factor used as ChIP-seq antibody).
+        gene_product_type:
+          type: string
+          description: Gene product type targeted by the experiment (e.g., miRNA)
+        macromolecular_structure:
+          type: string
+          description: Macromolecular structure targeted by the experiment (e.g., chromatin strucure)
+        lab_protocol_description:
+          type: string
+          description: "Free-text description of lab protocol, or URL to such description"
+        compute_protocol_description:
+          type: string
+          description: Free-text description of computational protocol, or URL to such description
+
+        assembly_id:
+          type: string
+          description: "Genome assembly identifier. e.g. insdc.gca:GCF_000001405.26"
+        assembly_name:
+          type: string
+          description: "Genome assembly name e.g. GRCh38"
+        experiment_ref:
+          type: string
+          description: "Reference to the experiment of the track (e.g., encode:ENCSR000DQP)"
+        file_url:
+          type: string
+          description: "URL to the file"
+        file_name:
+          type: string
+          description: "Name of the file (e.g., ENCFF000VZC.bed.gz)"
+        label_short:
+          type: string
+          description: A short label of the track file. Suggested maximum length is 25 characters
+        label_long:
+          type: string
+          description: A long label of the track file. Suggested maximum length is 80 characters
+        file_format:
+          type: string
+          description: File format (e.g., "bed", "narrowPeak", "broadPeak")
+        type_of_condensed_data:
+          type: string
+          description: (e.g. "Narrow peaks")
+        geometric_track_type:
+          type: string
+          description: (e.g. Segments)
+        checksum:
+          type: string
+          description: Method of checksum generation. (eg. MD5)
+
+      required:
+        - local_id
+        - species_id
+        - biospecimen_class
+        - sample_type
+        - technique
+        - target
+        - study_reference
+        - assembly_id
+        - assembly_name
+        - experiment_ref
+        - file_url
+        - label_short
+        - label_long
+        - file_format
+        - type_of_condensed_data
+        - geometric_track_type
+        - checksum
+
+required:
+  - samples
